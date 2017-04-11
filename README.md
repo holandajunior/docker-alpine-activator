@@ -16,7 +16,7 @@ This image will expose PORT 9000 and it uses the folder '/app' as base for execu
 
 When you have access to container, its base work directory was already set to '/app' folder. Then, you can execute `$ activator`; `$ activator run`; whatever...
 
-When you had finished with container, do not quit it, just use `CTRL`+`P` and `CTRL`+`Q` to detach from image and being able to come back later with `$ docker attach CONTAINER_NAME_PREVIOUSLY_SET`.
+When you had finished with container, do not quit it, just use `CTRL`+`P` and `CTRL`+`Q` to detach from container and being able to come back later with `$ docker attach CONTAINER_NAME_PREVIOUSLY_SET`.
 
 ### With database container
 `$ docker run --name -it -v LOCAL_PROJECT:/app -port 9000:9000  --link DATABASE_CONTAINER_NAME_OR_ID holandajunior/alpine-activator bash`
